@@ -1,0 +1,2 @@
+cd code/wp-content/themes/best-theme
+mput /Users/xanin/Developer/university/cms/wp-theme/src/*

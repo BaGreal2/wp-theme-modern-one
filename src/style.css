@@ -1,0 +1,415 @@
+/*
+Theme Name: Modern One
+Theme URI: https://github.com/BaGreal2/wp-theme-modern-one
+Author: Artem Kravchenko
+Author URI: https://github.com/BaGreal2
+Description: A sleek, minimalist WordPress theme for selling ethically questionable, horse-delivered jellied fish from landlocked Mongolia.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: absurd, minimalist, blog, ecommerce, custom-theme, woo-commerce-ready
+Text Domain: modern-one
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  flex-shrink: 0;
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list > ul {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-list > ul > li > a {
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.site-nav .nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #ccc;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+/* Content */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.site-content {
+  padding: 2rem 1.25rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Posts */
+.page-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.post-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.post-thumb img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-title-link {
+  color: #111;
+  text-decoration: none;
+}
+
+.post-title-link:hover {
+  text-decoration: underline;
+}
+
+.post-excerpt {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #e0f7fa;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.cta-button {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.features {
+  padding: 1rem;
+}
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+.features li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.hero-absurd {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #eaf7f7;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.hero-absurd h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+}
+.hero-absurd p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-absurd .cta-button {
+  margin-top: 1rem;
+  background: #111;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.guarantee {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.testimonials {
+  background: #fdfdfd;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #ccc;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  font-style: italic;
+  color: #444;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.newsletter {
+  background: #f4f4f4;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.newsletter h2 {
+  margin-bottom: 0.5rem;
+}
+.newsletter input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+.newsletter button {
+  background: #111;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-flex {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-nav {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive: Collapse into toggle on mobile */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+}
+
+.single-post {
+  margin: 0 auto;
+}
+
+.single-post .post-title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+  text-align: center;
+}
+
+.single-post .post-meta {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featured-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.post-footer-note {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+}
+

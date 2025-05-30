@@ -1,0 +1,3 @@
+.env
+upload-prod.sh
+.php-cs-fixer.cache
